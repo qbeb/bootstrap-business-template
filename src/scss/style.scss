@@ -1,1 +1,29 @@
+$primary: #64BEE3;
+$secondary: #E69E97;
+$light: #ECF4F5;
+$dark: #4B679F;
+$darker: #24395F;
+$background: #f5f5f5;
+
 @import "node_modules/bootstrap/scss/bootstrap";
+
+html, body {
+    background-color: $background !important;
+    overflow-x: hidden;
+}
+
+.hero-image-front {
+    margin-top: -50px;
+    margin-left: -50px;
+    border: 15px solid $background;
+}
+
+.hero-wrapper {
+    height: 50%;
+}
+
+@include media-breakpoint-up(lg) {
+    .hero-wrapper {
+        height: 100%;
+    }
+}
